@@ -22,9 +22,10 @@ function App() {
         >
           Learn React
         </a>
-        <Main/>
-        <Footer/>
       </header>
+      <Main/>
+
+      <Footer/>
     </div>
   );
 }

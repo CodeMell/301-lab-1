@@ -4,11 +4,14 @@ class HornedBeast extends React.Component{
     render(){
         return(
             <div>
-                <h2>Rhino</h2>
-                <img src='https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=1825&q=80'/>
+                <h2>{this.props.title}</h2>
+                <img src={this.props.imageUrl} alt={this.props.keyword}  title={this.props.title}/>
+                <p>{this.props.description}</p>
             
             </div>
         )
     }
 }
+
+
 export default HornedBeast;
