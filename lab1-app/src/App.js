@@ -3,9 +3,7 @@ import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Main from './Components/Main';
-// import image_url from './data.json';
 
-// console.log(imageUrl);
 function App() {
   return (
     <div className="App">
@@ -24,7 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Main /> {/*pass image data to main*/}
+      <Main />
 
       <Footer/>
     </div>

@@ -13,7 +13,7 @@ import React from 'react'
 function Footer() {
     return (
         <footer>
-        <p>Patterson</p>
+        <p>Made By: Patterson</p> {/*author of site*/}
         </footer>
     );
 }
