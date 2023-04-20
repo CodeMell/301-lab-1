@@ -15,7 +15,7 @@ import image_url from './data.json';
 //     }
 // }
 
-function Main(props) {
+function Main() {
     return (
       <main>
         {/*image placement*/}
