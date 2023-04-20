@@ -4,10 +4,9 @@ import React from 'react'
 //     render(){
 //         return(
 //             <div>
-//                 <h2>{this.props.title}</h2>
-//                 <img src={this.props.imageUrl} alt={this.props.keyword}  title={this.props.title}/>
-//                 <p>{this.props.description}</p>
-            
+//                 <h2>{this.props.title}</h2> {/* title of image */}
+//                 <img src={this.props.imageUrl} alt={this.props.keyword}  title={this.props.title}/> {/*image*/}
+//                 <p>{this.props.description}</p> {/*description of the image*/}
 //             </div>
 //         )
 //     }
@@ -15,9 +14,9 @@ import React from 'react'
 function HornedBeast(props) {
     return (
         <div>
-        <h2>{props.title}</h2>
-        <img src={props.imageUrl} alt={props.keyword}  title={props.title}/>
-        <p>{props.description}</p>
+        <h2>{props.title}</h2> {/* title of image */}
+        <img src={props.imageUrl} alt={props.keyword}  title={props.title}/> {/*path to image*/}
+        <p>{props.description}</p> {/*description of the image*/}
     
     </div>
     );
