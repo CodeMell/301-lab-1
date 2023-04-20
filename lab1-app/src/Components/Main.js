@@ -1,6 +1,7 @@
 import React from 'react'
 import HornedBeast from './HornedBeast';
 import image_url from './data.json';
+import Button from 'react-bootstrap/Button';
 
 
 // class Main extends React.Component{
@@ -18,6 +19,8 @@ import image_url from './data.json';
 function Main() {
     return (
       <main>
+        {/*bootstrap placeholder*/}
+        <Button>rest</Button>
         {/*image placement*/}
         <HornedBeast keyword = {image_url[0].keyword} description = {image_url[0].description} title = {image_url[0].title} imageUrl = {image_url[0].image_url}/>
         <HornedBeast keyword = {image_url[1].keyword} description = {image_url[1].description} title = {image_url[1].title} imageUrl = {image_url[1].image_url}/>
