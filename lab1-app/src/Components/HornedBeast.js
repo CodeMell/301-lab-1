@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Button from 'react-bootstrap/Button';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 // class HornedBeast extends React.Component{
 //     render(){
@@ -13,15 +15,18 @@ import React, { useState } from 'react'
 // }
 function HornedBeast(props) {
   const[Favorites,Favorited] = useState(0);
-  // Favorited = () => {
-  //   this.setState({ Favorites: this.state.Favorites + 1 });
-  // }
     return (
         <div>
-        <h2>{props.title}</h2> {/* title of image */}
-        <img onClick={() => Favorited(Favorites+1)} src={props.imageUrl} alt={props.keyword}  title={props.title}/> {/*path to image*/}
-        <p>{props.description}</p> {/*description of the image*/}
-        <p>❤ {Favorites}</p>
+          <Dropdown>
+            <Dropdown.Toggle>
+              <h2>{props.title}</h2> {/* title of image */}
+              <img  src={props.imageUrl} alt={props.keyword}  title={props.title}/> {/*path to image*/}
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <p>{props.description}</p> {/*description of the image*/}
+              <Button onClick={() => Favorited(Favorites+1)} variant='outline-danger'>❤ {Favorites}</Button> {/*favorited image button*/}
+            </Dropdown.Menu>
+          </Dropdown>
       </div>
     );
   }

@@ -1,3 +1,4 @@
+# lab2
 Number and name of feature:  Display Images
 Estimate of time needed to complete: 2hr
 
@@ -26,6 +27,16 @@ Start time: 12:00 am
 Finish time: 12:14 am 
 
 Actual time needed to complete: 14 min
+# lab3
+Number and name of feature: Display a Modal
+
+Estimate of time needed to complete: 8 min
+
+Start time: 8:12 pm
+
+Finish time: 8:21 pm
+
+Actual time needed to complete: 9 min
 
 # Getting Started with Create React App
 
