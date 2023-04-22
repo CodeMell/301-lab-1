@@ -4,7 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 function SelectedBeast() {
       return (
           <Modal>
-            <img   /> {/*path to image*/}
+            <img/> {/*path to image*/}
         </Modal>
       );
     }
