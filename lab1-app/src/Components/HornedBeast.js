@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
+import SelectedBeast from './SelectedBeast';
 
 // class HornedBeast extends React.Component{
 //     render(){
@@ -17,7 +18,7 @@ function HornedBeast(props) {
     return (
         <div>
         <h2>{props.title}</h2> {/* title of image */}
-        <img  src={props.imageUrl} alt={props.keyword}  title={props.title}/> {/*path to image*/}
+        <img onClick={SelectedBeast} src={props.imageUrl} alt={props.keyword}  title={props.title}/> {/*path to image*/}
         <p>{props.description}</p> {/*description of the image*/}
         <Button onClick={() => Favorited(Favorites+1)} variant='outline-danger'>❤ {Favorites}</Button> {/*Favorited image buttom*/}
         
