@@ -1,7 +1,6 @@
 import React from 'react'
 import HornedBeast from './HornedBeast';
 import image_url from './data.json';
-import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 // class Main extends React.Component{
@@ -20,7 +19,6 @@ function Main() {
     return (
       <main>
         {/*bootstrap placeholder*/}
-        <Button>rest</Button>
         {/*image placement*/}
         <ListGroup.Item><HornedBeast keyword = {image_url[0].keyword} description = {image_url[0].description} title = {image_url[0].title} imageUrl = {image_url[0].image_url}/></ListGroup.Item>
         <ListGroup.Item><HornedBeast keyword = {image_url[1].keyword} description = {image_url[1].description} title = {image_url[1].title} imageUrl = {image_url[1].image_url}/></ListGroup.Item>
