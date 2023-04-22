@@ -20,12 +20,10 @@ function HornedBeast(props) {
     return (
         <div>
           <Card style={{ width: '18rem' }}>
-            <Card.Img onClick={SelectedBeast} src={props.imageUrl} alt={props.keyword}  title={props.title} />
-            <Card.Body>
-              <Card.Title>{props.title}</Card.Title>
-              <Card.Text>{props.description}</Card.Text>
-              <Button onClick={() => Favorited(Favorites+1)} variant='outline-danger'>❤ {Favorites}</Button>
-            </Card.Body>
+            <img onClick={SelectedBeast} src={props.imageUrl} alt={props.keyword}  title={props.title} />
+            <h2>{props.title}</h2>
+            <p>{props.description}</p>
+            <Button onClick={() => Favorited(Favorites+1)} variant='outline-danger'>❤ {Favorites}</Button>
           </Card>        
       </div>
     );

@@ -1,6 +1,7 @@
 import React from 'react'
 import HornedBeast from './HornedBeast';
-import image_url from './data.json';
+import SelectedBeast from './SelectedBeast';
+import imageData from './data.json';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -24,26 +25,26 @@ function Main() {
         {/*image placement*/}
         <Container>
           <Row>
-            <Col><HornedBeast keyword = {image_url[0].keyword} description = {image_url[0].description} title = {image_url[0].title} imageUrl = {image_url[0].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[1].keyword} description = {image_url[1].description} title = {image_url[1].title} imageUrl = {image_url[1].image_url}/></Col>
-            <Col> <HornedBeast keyword = {image_url[2].keyword} description = {image_url[2].description} title = {image_url[2].title} imageUrl = {image_url[2].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[3].keyword} description = {image_url[3].description} title = {image_url[3].title} imageUrl = {image_url[3].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[4].keyword} description = {image_url[4].description} title = {image_url[4].title} imageUrl = {image_url[4].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[5].keyword} description = {image_url[5].description} title = {image_url[5].title} imageUrl = {image_url[5].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[6].keyword} description = {image_url[6].description} title = {image_url[6].title} imageUrl = {image_url[6].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[7].keyword} description = {image_url[7].description} title = {image_url[7].title} imageUrl = {image_url[7].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[8].keyword} description = {image_url[8].description} title = {image_url[8].title} imageUrl = {image_url[8].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[9].keyword} description = {image_url[9].description} title = {image_url[9].title} imageUrl = {image_url[9].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[10].keyword} description = {image_url[10].description} title = {image_url[10].title} imageUrl = {image_url[10].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[11].keyword} description = {image_url[11].description} title = {image_url[11].title} imageUrl = {image_url[11].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[12].keyword} description = {image_url[12].description} title = {image_url[12].title} imageUrl = {image_url[12].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[13].keyword} description = {image_url[13].description} title = {image_url[13].title} imageUrl = {image_url[13].image_url}/></Col>
-            <Col> <HornedBeast keyword = {image_url[14].keyword} description = {image_url[14].description} title = {image_url[14].title} imageUrl = {image_url[14].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[15].keyword} description = {image_url[15].description} title = {image_url[15].title} imageUrl = {image_url[15].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[16].keyword} description = {image_url[16].description} title = {image_url[16].title} imageUrl = {image_url[16].image_url}/></Col>
-            <Col> <HornedBeast keyword = {image_url[17].keyword} description = {image_url[17].description} title = {image_url[17].title} imageUrl = {image_url[17].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[18].keyword} description = {image_url[18].description} title = {image_url[18].title} imageUrl = {image_url[18].image_url}/></Col>
-            <Col><HornedBeast keyword = {image_url[19].keyword} description = {image_url[19].description} title = {image_url[19].title} imageUrl = {image_url[19].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[0].keyword} description = {imageData[0].description} title = {imageData[0].title} imageUrl = {imageData[0].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[1].keyword} description = {imageData[1].description} title = {imageData[1].title} imageUrl = {imageData[1].image_url}/></Col>
+            <Col> <HornedBeast keyword = {imageData[2].keyword} description = {imageData[2].description} title = {imageData[2].title} imageUrl = {imageData[2].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[3].keyword} description = {imageData[3].description} title = {imageData[3].title} imageUrl = {imageData[3].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[4].keyword} description = {imageData[4].description} title = {imageData[4].title} imageUrl = {imageData[4].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[5].keyword} description = {imageData[5].description} title = {imageData[5].title} imageUrl = {imageData[5].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[6].keyword} description = {imageData[6].description} title = {imageData[6].title} imageUrl = {imageData[6].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[7].keyword} description = {imageData[7].description} title = {imageData[7].title} imageUrl = {imageData[7].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[8].keyword} description = {imageData[8].description} title = {imageData[8].title} imageUrl = {imageData[8].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[9].keyword} description = {imageData[9].description} title = {imageData[9].title} imageUrl = {imageData[9].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[10].keyword} description = {imageData[10].description} title = {imageData[10].title} imageUrl = {imageData[10].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[11].keyword} description = {imageData[11].description} title = {imageData[11].title} imageUrl = {imageData[11].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[12].keyword} description = {imageData[12].description} title = {imageData[12].title} imageUrl = {imageData[12].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[13].keyword} description = {imageData[13].description} title = {imageData[13].title} imageUrl = {imageData[13].image_url}/></Col>
+            <Col> <HornedBeast keyword = {imageData[14].keyword} description = {imageData[14].description} title = {imageData[14].title} imageUrl = {imageData[14].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[15].keyword} description = {imageData[15].description} title = {imageData[15].title} imageUrl = {imageData[15].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[16].keyword} description = {imageData[16].description} title = {imageData[16].title} imageUrl = {imageData[16].image_url}/></Col>
+            <Col> <HornedBeast keyword = {imageData[17].keyword} description = {imageData[17].description} title = {imageData[17].title} imageUrl = {imageData[17].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[18].keyword} description = {imageData[18].description} title = {imageData[18].title} imageUrl = {imageData[18].image_url}/></Col>
+            <Col><HornedBeast keyword = {imageData[19].keyword} description = {imageData[19].description} title = {imageData[19].title} imageUrl = {imageData[19].image_url}/></Col>
           </Row>
         </Container>
 

@@ -3,11 +3,11 @@ import Modal from 'react-bootstrap/Modal';
 
 
 {/*image pop-up*/}
-function SelectedBeast() {
+function SelectedBeast(props) {
       return (
         
         <Modal>
-            <img/> {/*path to image*/}
+            <img src={props.imageUrl}/> {/*path to image*/}
         </Modal>
       );
     }
