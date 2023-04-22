@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import SelectedBeast from './SelectedBeast';
 import Card from 'react-bootstrap/Card';
+import Modal from 'react-bootstrap/Modal';
 
 // class HornedBeast extends React.Component{
 //     render(){
