@@ -4,17 +4,6 @@ import SelectedBeast from './SelectedBeast';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 
-// class HornedBeast extends React.Component{
-//     render(){
-//         return(
-//             <div>
-//                 <h2>{this.props.title}</h2> {/* title of image */}
-//                 <img src={this.props.imageUrl} alt={this.props.keyword}  title={this.props.title}/> {/*image*/}
-//                 <p>{this.props.description}</p> {/*description of the image*/}
-//             </div>
-//         )
-//     }
-// }
 function HornedBeast(props) {
   const[Favorites,Favorited] = useState(0);
 

@@ -3,9 +3,10 @@ import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Main from './Components/Main';
-// import imageArray from './data.json';
+import imageArray from './data.json';
 import SelectedBeast from './Components/SelectedBeast';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         </a>
       </header>
       
-      <Main />
+      <Main imageData={imageArray}/>
       
       <Footer/>
     </div>
