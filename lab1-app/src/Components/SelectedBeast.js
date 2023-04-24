@@ -1,3 +1,4 @@
+import { Button } from 'bootstrap';
 import React from 'react'
 import Modal from 'react-bootstrap/Modal';
 
@@ -6,8 +7,9 @@ import Modal from 'react-bootstrap/Modal';
 function SelectedBeast(props) {
       return (
         
-        <Modal>
+        <Modal show={true} onHide={() => {}}>
             <img src={props.imageUrl}/> {/*path to image*/}
+            <Button>close</Button>
         </Modal>
       );
     }

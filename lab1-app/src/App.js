@@ -3,7 +3,9 @@ import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Main from './Components/Main';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// import imageArray from './data.json';
+import SelectedBeast from './Components/SelectedBeast';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -23,8 +25,9 @@ function App() {
           Learn React
         </a>
       </header>
+      
       <Main />
-
+      
       <Footer/>
     </div>
   );

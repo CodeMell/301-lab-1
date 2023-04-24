@@ -17,6 +17,11 @@ import Modal from 'react-bootstrap/Modal';
 // }
 function HornedBeast(props) {
   const[Favorites,Favorited] = useState(0);
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  
     return (
         <div>
           <Card style={{ width: '18rem' }}>
@@ -24,6 +29,7 @@ function HornedBeast(props) {
             <h2>{props.title}</h2>
             <p>{props.description}</p>
             <Button onClick={() => Favorited(Favorites+1)} variant='outline-danger'>❤ {Favorites}</Button>
+            
           </Card>        
       </div>
     );
