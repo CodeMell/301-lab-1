@@ -18,7 +18,9 @@ function Main(props) {
                 <HornedBeast keyword = {imageData.keyword}
                 description = {imageData.description}
                 title = {imageData.title}
-                imageUrl = {imageData.image_url}/>
+                imageUrl = {imageData.image_url}
+                selectedImg={props.selectedImg}
+                />
                 </Col>
               )
             })}

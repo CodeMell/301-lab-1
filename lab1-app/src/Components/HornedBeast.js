@@ -3,9 +3,9 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 
-function HornedBeast(props,selectedImg) {
+function HornedBeast(props) {
   const[Favorites,Favorited] = useState(0);
-  const handlePictureClick = (e) => {selectedImg(props);} //clicked image
+  const handlePictureClick = (e) => {props.selectedImg(props);} //clicked image
     return (
         <div>
           <Card style={{ width: '18rem' }}>

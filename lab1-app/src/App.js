@@ -9,14 +9,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  const [clickedBeast, setClickedBeast] = useState(null)
+  const [clickedImg, setClickedImg] = useState(null)
   return (
     <div className="App">
       <Header/>
       {/* pop out image */}
-      <Main imageData={imageArray} selectedImg={setClickedBeast}/>
+      <Main imageData={imageArray} selectedImg={setClickedImg}/>
+      {clickedImg && <SelectedBeast imageData={clickedImg} selectedImg={setClickedImg}/>}
       {/* list of images */}
-      {clickedBeast && <SelectedBeast imageData={clickedBeast} selectedImg={setClickedBeast}/>}
       <Footer/>
     </div>
   );
