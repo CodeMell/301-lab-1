@@ -38,7 +38,7 @@ Finish time: 8:21 pm
 
 Actual time needed to complete: 9 min
 # lab4
-Number and name of feature: 
+Number and name of feature: Filter by Numbers of Horns
 
 Estimate of time needed to complete: 
 
