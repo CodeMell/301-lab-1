@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+
       <Main imageData={imageArray} />
       <Footer/>
     </div>
