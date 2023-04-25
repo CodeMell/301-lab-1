@@ -9,7 +9,7 @@ import React from 'react'
 // }
 function Header() {
     return (
-        <h1>title here</h1> // title of site
+        <h1>Horned Beast</h1> // title of site
     );
   }
 

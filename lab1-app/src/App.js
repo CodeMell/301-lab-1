@@ -1,30 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Main from './Components/Main';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import imageArray from './data.json';
+import { useState } from 'react'
+import SelectedBeast from './Components/SelectedBeast';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
+  const [clickedBeast, setClickedBeast] = useState(null)
   return (
     <div className="App">
       <Header/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Main />
-
+      {/* pop out image */}
+      <Main imageData={imageArray} selectedImg={setClickedBeast}/>
+      {/* list of images */}
+      {clickedBeast && <SelectedBeast imageData={clickedBeast} selectedImg={setClickedBeast}/>}
       <Footer/>
     </div>
   );

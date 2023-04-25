@@ -1,29 +1,19 @@
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
-import SelectedBeast from './SelectedBeast';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 
-// class HornedBeast extends React.Component{
-//     render(){
-//         return(
-//             <div>
-//                 <h2>{this.props.title}</h2> {/* title of image */}
-//                 <img src={this.props.imageUrl} alt={this.props.keyword}  title={this.props.title}/> {/*image*/}
-//                 <p>{this.props.description}</p> {/*description of the image*/}
-//             </div>
-//         )
-//     }
-// }
-function HornedBeast(props) {
+function HornedBeast(props,selectedImg) {
   const[Favorites,Favorited] = useState(0);
+  const handlePictureClick = (e) => {selectedImg(props);} //clicked image
     return (
         <div>
           <Card style={{ width: '18rem' }}>
-            <img onClick={SelectedBeast} src={props.imageUrl} alt={props.keyword}  title={props.title} />
+            <img onClick={handlePictureClick} src={props.imageUrl} alt={props.keyword}  title={props.title} />{/* Favorited button */}
             <h2>{props.title}</h2>
             <p>{props.description}</p>
-            <Button onClick={() => Favorited(Favorites+1)} variant='outline-danger'>❤ {Favorites}</Button>
+            <Button onClick={() => Favorited(Favorites+1)} variant='outline-danger'>❤ {Favorites}</Button> {/* Favorited button */}
+            
           </Card>        
       </div>
     );
